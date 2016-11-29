@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Opdracht 1 - A Frame</title>
+
+    <!-- A Frame -->
+    <script src="../bower_components/aframe/dist/aframe.min.js"></script>
+    <script src="../node_modules/aframe-bmfont-text-component/dist/aframe-bmfont-text-component.min.js"></script>
+
+    <!-- Main -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+    <!-- Style -->
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Alles hieronder wordt VR-->
+<a-scene>
+
+    <a-camera>
+        <a-cursor color="white"></a-cursor>
+    </a-camera>
+
+    <!-- Achtergrond -->
+    <a-sky color="#03a9f4"></a-sky>
+
+    <a-entity bm-font="text: Hello!" position="0 1 -10"></a-entity>
+
+    <!-- Basis element in A Frame-->
+    <!-- Position = X Y Z -->
+    <a-sphere color="#ff5722" radius="2" position="0 5 -2"></a-sphere>
+
+    <a-entity>
+        <a-box color="#ff5722" depth="1" width="1" height="1" position="0 1 -4"></a-box>
+        <a-animation attribute="rotation" dur="1000" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+    </a-entity>
+
+    <!-- Ondergrond -->
+    <a-plane color="#cddc39" width="20" height="20" rotation="-90 0 0"></a-plane>
+</a-scene>
+
+</body>
+</html>
