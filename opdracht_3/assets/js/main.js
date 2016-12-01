@@ -7,7 +7,6 @@ $(document).ready(function() {
 
     // Animatie
     var animation_box_parent = '<a-animation attribute="rotation" dur="10000" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>';
-
     var animation_isset = false;
 
     box.addEventListener('mouseenter', function () {

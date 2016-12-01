@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Opdracht 4</title>
+
+        <!-- Externe libraries -->
+        <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="../node_modules/aframe/dist/aframe.min.js"></script>
+
+        <script type="text/javascript" src="assets/js/main.js"></script>
+
+    </head>
+    <body>
+
+        <a-scene>
+            <!-- Camera -->
+            <a-camera id="camera">
+                <a-cursor color="white"></a-cursor>
+                <a-sphere id="nep" position="0 0 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+            </a-camera>
+
+            <!-- Bol -->
+            <a-entity>
+                <a-sphere id="echt" position="0 5 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+            </a-entity>
+
+            <!-- Achtergrond -->
+            <a-sky color="#6EBAA7"></a-sky>
+
+            <!-- Ondergrond -->
+            <a-plane color="#cddc39" width="20" height="20" rotation="-90 0 0"></a-plane>
+        </a-scene>
+
+    </body>
+</html>
