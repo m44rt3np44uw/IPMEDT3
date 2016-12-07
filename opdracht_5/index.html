@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Opdracht 5 - API</title>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- Libraries -->
+        <script src="bower_components/aframe/dist/aframe.min.js"></script>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../node_modules/aframe-text-component/dist/aframe-text-component.min.js"></script>
+
+        <!-- Main -->
+        <script src="assets/js/main.js"></script>
+    </head>
+    <body>
+        <a-scene>
+
+            <a-camera look-controls>
+                <a-cursor color = "white"> </a-cursor>
+            </a-camera>
+
+            <a-sky src="assets/img/sky.jpg"> </a-sky>
+            <a-box id="box1" data="/people/" color ="blue" position = "2 2 -3"> </a-box>
+            <a-box id="box2" data="/planets/" color ="blue" position = "0 4 -3"> </a-box>
+            <a-box id="box3" data="/films/" color ="blue" position = "-2 2 -3"> </a-box>
+            <a-entity id="text" mixin="font" text="text: Hello; color:white;"  position="-1 0 -7"></a-entity>
+        </a-scene>
+    </body>
+</html>
