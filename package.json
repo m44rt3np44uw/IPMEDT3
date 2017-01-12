@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/m44rt3np44uw/IPMEDT3#readme",
   "dependencies": {
-    "aframe": "^0.3.2",
+    "aframe": "^0.4.1",
     "aframe-bmfont-text-component": "^0.1.4",
     "aframe-text-component": "^0.3.0",
     "jquery": "^3.1.1"
